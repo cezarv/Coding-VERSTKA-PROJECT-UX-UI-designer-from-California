@@ -1,0 +1,248 @@
+/* GENERAL STYLING */
+
+:root {
+    --background_color_one: #fff;
+    --background_color_two:#F4F4F4;
+    --background_color_three:#E5E5E5;
+    --text_color_black:#070707;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background-color: var(--background_color_three);
+}
+
+.wrapper {
+    width: 100%;
+    max-width:1445px ;
+    margin: 0 auto;
+    background-color: var(--background_color_one);
+    min-height: 10rem;
+    box-sizing: border-box;
+}
+
+.inner {
+    width: 100%;
+    max-width: 945px;
+    margin: 0 auto;
+    height: inherit;
+}
+
+.top_header {
+    background-color: var(--background_color_one);
+    min-height: 50px;
+}
+
+
+
+
+/* NAVIGATION */
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 50px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #828282;   
+}
+
+.navigation a {
+    color: #828282;
+    text-decoration: none;
+}
+
+.navigation .home-active {
+    color:  var(--text_color_black);
+}
+
+.navigation a.home-active, .navigation a:hover {
+    color:  var(--text_color_black);
+    
+}
+
+
+/* HOME PAGE */
+
+.home-page {
+    height: 615px;
+}
+
+.logo {
+    font-size: 47.34px;
+    line-height: 55.48px;
+    font-weight: 700;
+    padding-top: 35px;
+    color: var(--text_color_black);
+    padding-bottom: 55px;
+}
+
+.home-inner {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0px;
+    flex-flow: row wrap;
+    padding-bottom: 100px;
+    
+}
+
+.bio {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21px;
+    padding-top: 41px;
+    text-align: right;
+    color: var(--text_color_black);
+    padding-bottom: 55px;
+}
+
+.home-inner img {
+    text-align: center;
+    width: 945px;
+    height: 500px;
+}
+
+
+/* ABOUT ME PAGE */
+
+
+.inner-grid {
+    margin-top: 100px;
+    background-color:  var(--background_color_two);
+    padding-bottom: 50px;
+
+}
+
+.inner-about {
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 34px;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.grid-about-page {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap:2.75rem;
+}
+
+.grid-about-page p {
+    font-size: 20px;
+    font-weight: 500 ;
+    text-align: left;
+    padding-top: 96px;
+    max-width: 450px;
+}
+
+.picture-about {
+    max-width: 450px;
+    max-width: 450px;
+}
+
+/* SKILLS PAGE */
+
+.inner .skills-page {
+    background-color: var(--background_color_one);
+}
+
+.skills-h2 h2{
+font-size: 44px;
+font-weight: 700;
+line-height: 40px;
+text-align: center;
+padding-bottom: 50px;
+}
+
+/* .skills-item-group .skills-item {
+    display: inline-block;
+    text-align: left; 
+} */
+
+.skills-item-group {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 0 auto;
+    text-align: center;
+    max-height: 87.86px;
+    padding-bottom: 100px;
+}
+
+.skills-item h3 {
+    font-size: 14px;
+    font-weight: 700;
+    
+}
+
+.h3-figma {
+margin-top: 30px;
+}
+
+/* PAGE SNEAKER  */
+
+.inner-sneaker {
+    background-color: var(--background_color_two);
+}
+
+.inner-sneaker h2{
+font-size: 34px;
+font-weight: 700;
+text-align: center;
+padding-top: 50px;
+padding-bottom: 50px;
+}
+
+.inner-sneaker {
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    
+}
+
+.inner-sneaker a {
+    display: inline-block;
+    color: var(--text_color_black);
+    padding-top: 40px;
+    padding-bottom: 86px;
+}
+
+
+/* PAGE HELIAS */
+
+
+/* PAGE HUANG NGUEN */
+.inner-huang a {
+    display: inline-block;
+    color: var(--text_color_black);
+    padding-top: 40px;
+    padding-bottom: 100px;
+}
+
+
+/* PAGE CONTACTS */
+
+.contacts-h2 h2{
+        font-size: 34px;
+        font-weight: 700;
+        line-height: 39.84px;
+        text-align: center;
+        padding-top: 50px;
+        padding-bottom: 37px;      
+}
+
+.contact-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 60%;
+    margin: auto;
+    padding-bottom: 100px;
+}
