@@ -16,30 +16,47 @@
 </head>
 
 <body>
+
+<!-- Добрий день, це Цісар Володимир, дуже дякую за можливість показати свої знання.
+
+Сподіваюсь на допуск до програми навчання Frontend ? 
+
+Трохи про себе: Я навчався в Німеччині на факультеті дизайну і програмування, цей факультет я успішно закінчив.
+
+Ось тут інформація про сам факультет 
+
+https://www.hs-merseburg.de/studium/studiengaenge/informationsdesign-und-medienmanagement/
+
+
+Це посилання на моє портфоліо → https://cezarv.github.io/
+
+Досконало володію англійською і німецькою мовами
+
+Сподіваюсь на плідну співпрацю -->
+
 	<div class="wrapper">
-		<header>
-			<!-- navigation-group -->
-			<div class="navigation-group-wrapper">
-				<div class="inner-content-styling">
-					<nav class="navigation-group"> <a href="" class="navigation-group__home-active">Home</a>
-						<a href="#">About me</a>
-						<a href="#">Skills</a>
-						<a href="#">Portfolio</a>
-						<a href="#">Contacts</a>
-					</nav>
-					<hr class="horizrule"> 
-					<!-- <hr style="width:100%; background-color:#828282;"> -->
-				</div>
-			</div>
-		</header>
+		<div class="inner-content-styling">
+		<header id="header">
+			<ul>
+      <li ><a href="#home" onclick="toggle()">Home</a></li>
+      <li ><a href="#about" onclick="toggle()">About me</a></li>
+      <li ><a href="#skills" onclick="toggle()">Skills</a></li>
+      <li ><a href="#portfolio" onclick="toggle()">Portfolio</a></li>
+      <li ><a href="#contacts" onclick="toggle()">Contact</a></li>
+    </ul>
+	<div class="toggle" onclick="toggle()"></div>
+  </header>
+</div>
+
 		<!-- HOME PAGE -->
 		<div class="homepage-wrapper">
 		<div class="inner-content-styling">
+		<a name="home"></a>
 				<div class="inner-content-styling inner-content-styling__homepage">
 					<div class="homepage-logo">Margo Smith</div>
 					<div class="homepage-bio">UX | UI designer from California</br>24 years old</div>
 					<div class="homepage-picture">
-						<img src="images/laptop-min.jpg" alt="laptop-homepage-picture">
+					<img src="images/laptop-min.jpg" alt="laptop-homepage-picture">
 					</div>
 				</div>
 			</div>
@@ -47,20 +64,20 @@
 		<!-- ABOUT ME PAGE -->
 		<div class="aboutpage-wrapper">
 			<div class="inner-content-styling">
-				<h2 class="inner-content-styling__aboutpage-title">About me</h2>
+				<a name="about"><h2 class="inner-content-styling__aboutpage-title">About me</h2></a>
 				<div class="inner-content-styling__aboutpage-grid">
 					<img class="aboutpage-picture" src="images/girl-min.png" alt="homepage-picture of girl">
-					<p>Hi, I'm Margo – UX/UI designer from California.</br>I'm interested in design and everything connected with it.</br>
+				 <p>Hi, I'm Margo – UX/UI designer from California.</br>I'm interested in design and everything connected with it.</br>
 						</br>I'm studying at courses "Web and mobile design interfaces" in IT-Academy.</br>
 						</br>Ready to implement excellent projects with wonderful people.</p>
 				</div>
 			</div>
 		</div>
 		<!-- SKILLS PAGE -->
-		<div class="skillspage-wrapper ">
+		<div class="skillspage-wrapper">
 		<div class="inner-content-styling">
 			<div class="skillspage-h2">
-				<h2>Skills </h2>
+				<a name="skills"> <h2>Skills </h2></a>
 			</div>
 			<div class="skillspage-item-group">
 				<div class="skillspage-item-group__item">
@@ -102,30 +119,35 @@
 			</div>
 		</div>
 	</div>
-		<!-- SNEAKERS PAGE -->
+		<!-- PROJECTS PAGE -->
+		<div class="projectspage-wrapper">
 		<div class="sneakerspage-wrapper">
 			<div div class="inner-content-styling">
-				<h2>Portfolio</h2>
+			<a name="portfolio"><h2>Portfolio</h2></a>	
+			<!-- ____subSECTION SNEAKER -->
 				<img src="images/Sneakers-min.png" alt="sneakers" class="sneakers-pic">
 			</div>
 			<a href="#" class="sneakerspage-link">Online fashion store - Homepage</a>
 		</div>
-		<!-- PAGE HELIAS  -->
+		<!-- ____subSECTION HELIAS -->
 		<div class="heliaspage-wrapper">
 			<div div class="inner-content-styling">
 				<img src="images/Helias-min.png" alt="helias-page-picture"  class="helias-pic">
 			</div> <a href="#" class="heliaspage-link">Helias Store - Concept</a>
 		</div>
-		<!-- PAGE HUANG NGUEN-->
+		<!-- ____subSECTION HUANG NGUEN-->
 		<div class="huang-nguenpage-wrapper inner-content-styling-huang-nguenpage">
 			<div div class="inner-content-styling">
 				<img src="images/Hoang Nguen-min.png" alt="huang-nguen-pic">
 			</div> <a href="#" class="sneakerspage-link">Hoang Nguen Landing Page - Concept</a>
 		</div>
+	</div>
+
+
 		<!-- PAGE CONTACTS -->
 		<div class="inner-content-styling skillspage-wrapper">
 			<div class="contactspage-h2">
-				<h2>Contacts</h2>
+				<a name="contacts"><h2>Contacts</h2></a>
 			</div>
 			<div class="contactspage-group">
 				<div class="contactspage-group__item">
@@ -144,6 +166,16 @@
 		</div>
 	</div>
 	</div>
+	<script type="text/javascript">
+		window.addEventListener("scroll", function(){
+		  var header = document.querySelector("header");
+		  header.classList.toggle("sticky", window.scrollY > 0);
+		})
+		function toggle(){
+		  var header = document.getElementById('header');
+		  header.classList.toggle('active')
+		}
+	  </script>
 </body>
 
 </html>

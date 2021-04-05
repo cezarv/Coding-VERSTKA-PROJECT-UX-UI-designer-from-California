@@ -1,11 +1,25 @@
 /* GENERAL STYLING */
 
+/* some color variables  */
+* {
+	list-style: none;
+	text-decoration: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+
 :root {
 	--background_color_one: #fff;
 	--background_color_two:  #F4F4F4;
 	--background_color_three: #E5E5E5;
 	--text_color_black: #070707;
 }
+
+html {
+	scroll-behavior: smooth;
+}
+
 html,
 body {
 	height: 100%;
@@ -32,50 +46,72 @@ body {
 
 /* NAVIGATION */
 
-.navigation-group-wrapper {
-	background-color: var(--background_color_one);
-	min-height: 50px;
+header
+{
+  position: fixed;
+  top: 0;
+  right: auto;
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  transition: 0.6s;
+  z-index: 100000;
+  border-bottom: 1px solid #828282;
+}
+
+header.sticky
+{
+  padding: 0 auto;
+  background:rgba(189, 194, 198, 0.4);
+  border-bottom: 1px solid rgba(0,0,0,.1);
 }
 
 
-.navigation-group {
-	display: flex;
-	justify-content: space-between;
-	font-size: 18px;
+header ul
+{
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+header ul li
+{
+  position: relative;
+  list-style: none;
+  padding-top: 40px;
+  padding-left: 85px;
+  padding-bottom: 20px;
+}
+header ul li a
+{
+  font-size: 18px;
+  line-height: 30px;
+  position: relative;
+  margin: 0 15px;
+  text-decoration: none;
+  color: #828282;
+  letter-spacing: 2px;
+  transition: 0.6s;
+}
+
+
+header a:hover {
+	color:#070707;
 	font-weight: 700;
-	line-height: 0px;
-	padding-top: 40px;
-	padding-bottom: 20px;
-}
-.navigation-group a {
-	color: #828282;
-	text-decoration: none;
 }
 
-.horizrule {
-	width:100%; 
-	border-top: 1px solid #828282;
-	margin-left: auto;
-	margin-right: auto;
-}
 
-.navigation-group .navigation-group__home-active {
-	color: var(--text_color_black);
-}
-.navigation-group a.navigation-group__home-active,
-.navigation-group a:hover {
-	color: var(--text_color_black);
-}
 /* HOME PAGE */
 
 .homepage-wrapper {
 	height: 615px;
+	padding-bottom: 100px;
 }
 .homepage-logo {
 	font-size: 47.34px;
 	line-height: 55.48px;
 	font-weight: 700;
-	padding-top: 35px;
+	padding-top: 135px;
 	color: var(--text_color_black);
 	padding-bottom: 55px;
 }
@@ -84,13 +120,12 @@ body {
 	justify-content: space-between;
 	margin-top: 0px;
 	flex-flow: row wrap;
-	padding-bottom: 100px;
 }
 .homepage-bio {
 	font-size: 18px;
 	font-weight: 500;
 	line-height: 21px;
-	padding-top: 41px;
+	padding-top: 141px;
 	text-align: right;
 	color: var(--text_color_black);
 	padding-bottom: 55px;
@@ -105,6 +140,7 @@ body {
 .aboutpage-wrapper {
 	margin-top: 100px;
 	background-color: var(--background_color_two);
+	padding-top: 50px;
 	padding-bottom: 50px;
 }
 .inner-content-styling__aboutpage-title {
@@ -130,6 +166,7 @@ body {
 .aboutpage-picture {
 	max-width: 450px;
 	max-width: 450px;
+	padding-bottom: 50px;
 }
 /* SKILLS PAGE */
 
@@ -141,6 +178,7 @@ body {
 	font-weight: 700;
 	line-height: 40px;
 	text-align: center;
+	padding-top: 50px;
 	padding-bottom: 50px;
 }
 
@@ -159,19 +197,26 @@ body {
 }
 
 .h3-figma {
-	margin-top: 30px;
+	margin-top: 16px;
 }
-/* PAGE SNEAKER  */
 
-.sneakerspage-wrapper, .heliaspage-wrapper, .huang-nguenpage-wrapper {
+.skillspage-wrapper {
+	padding-bottom: 50px;
+}
+
+/* PROJECTS  PAGE  */
+
+.projectspage-wrapper {
 	background-color: var(--background_color_two);
 }
+
+/* ____subSECTION SNEAKER  */
+
 .sneakerspage-wrapper h2 {
 	font-size: 34px;
 	font-weight: 700;
 	text-align: center;
 	padding-top: 50px;
-	padding-bottom: 50px;
 }
 .sneakerspage-wrapper {
 	font-size: 18px;
@@ -189,7 +234,7 @@ body {
 	max-width: 945px;
 	max-height: 510px;
 }
-/* PAGE HELIAS */
+/* ____subSECTION HELIAS */
 
 .heliaspage-wrapper {
 	font-size: 18px;
@@ -204,8 +249,7 @@ body {
 	padding-bottom: 86px;
 }
 
-
-/* PAGE HUANG NGUEN */
+/* ____subSECTION HUANG NGUEN */
 
 .huang-nguenpage-wrapper {
 	font-size: 18px;
