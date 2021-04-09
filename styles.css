@@ -8,11 +8,10 @@
 	padding: 0px;
 }
 
-
 :root {
 	--background_color_one: #fff;
-	--background_color_two:  #F4F4F4;
-	--background_color_three: #E5E5E5;
+	--background_color_two: #f4f4f4;
+	--background_color_three: #e5e5e5;
 	--text_color_black: #070707;
 }
 
@@ -46,60 +45,52 @@ body {
 
 /* NAVIGATION */
 
-header
-{
-  position: fixed;
-  top: 0;
-  right: auto;
-  display: flex;
-  justify-content: space-evenly;
-  text-align: center;
-  transition: 0.6s;
-  z-index: 100000;
-  border-bottom: 1px solid #828282;
+header {
+	position: fixed;
+	top: 0;
+	right: auto;
+	display: flex;
+	justify-content: space-evenly;
+	text-align: center;
+	transition: 0.6s;
+	z-index: 100000;
+	border-bottom: 1px solid #828282;
 }
 
-header.sticky
-{
-  padding: 0 auto;
-  background:rgba(189, 194, 198, 0.4);
-  border-bottom: 1px solid rgba(0,0,0,.1);
+header.sticky {
+	padding: 0 auto;
+	background: rgba(189, 194, 198, 0.4);
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-
-header ul
-{
-  position: relative;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+header ul {
+	position: relative;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
 }
-header ul li
-{
-  position: relative;
-  list-style: none;
-  padding-top: 40px;
-  padding-left: 85px;
-  padding-bottom: 20px;
+header ul li {
+	position: relative;
+	list-style: none;
+	padding-top: 40px;
+	padding-left: 85px;
+	padding-bottom: 20px;
 }
-header ul li a
-{
-  font-size: 18px;
-  line-height: 30px;
-  position: relative;
-  margin: 0 15px;
-  text-decoration: none;
-  color: #828282;
-  letter-spacing: 2px;
-  transition: 0.6s;
+header ul li a {
+	font-size: 18px;
+	line-height: 30px;
+	position: relative;
+	margin: 0 15px;
+	text-decoration: none;
+	color: #828282;
+	letter-spacing: 2px;
+	transition: 0.6s;
 }
-
 
 header a:hover {
-	color:#070707;
+	color: #070707;
 	font-weight: 700;
 }
-
 
 /* HOME PAGE */
 
@@ -230,7 +221,9 @@ header a:hover {
 	padding-bottom: 86px;
 }
 
-.sneakers-pic, .helias-pic, .huang-nguen-pic {
+.sneakers-pic,
+.helias-pic,
+.huang-nguen-pic {
 	max-width: 945px;
 	max-height: 510px;
 }
